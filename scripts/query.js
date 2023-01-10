@@ -24,8 +24,8 @@ inputs.forEach((el) => {
     if (userInput === computerChoice) message = "Draw";
     else message = `${winner === "player" ? "You" : winner} won the game.`;
     display.innerHTML = `
-    <li>Player: ${userInput}</li>
-    <li>Computer: ${computerChoice}</li>
+    <li><span>Player:</span> <span>${userInput}</span></li><br>
+    <li><span>Computer:</span> <span>${computerChoice}</span></li>
     `;
     messagebox.innerText = message;
     el.classList.add("click");
