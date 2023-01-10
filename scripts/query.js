@@ -7,6 +7,7 @@ const inputs = document.querySelectorAll(".choice");
 const display = document.querySelector(".display");
 const messagebox = document.querySelector(".message");
 const heading = document.querySelector("h1");
+const body = document.querySelector("body");
 
 export const mapper = {
   Rock: "R",
@@ -38,6 +39,10 @@ function toGameOverView() {
     home.classList.add("hidden");
     gameView.classList.add("game-view");
     heading.innerText = "Let's Play";
+    body.style.backgroundImage =
+      "linear-gradient(to right top, rgba(0,0,0,1), rgba(0,0,0,0.6)), url(/image/rockpaper.webp)";
+    body.style.backgroundPosition = "center";
+    body.style.backgroundSize = "cover";
   }
 }
 

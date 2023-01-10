@@ -58,16 +58,19 @@ img {
 
 .choice {
   height: 10rem;
-  width: 225px;
+  width: 10rem;
+  font-size: 40px;
   background: rgb(24, 11, 11);
   border: 5px solid rgb(218, 218, 218);
 }
 
 .click {
   border: 5px solid yellow;
+  color: yellow;
 }
 
 .game-view {
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -81,5 +84,11 @@ ul li {
 
 p {
   font-size: 25px;
-  color: #fff;
+  color: rgb(10, 236, 187);
+}
+
+.input {
+  width: 535px;
+  display: flex;
+  justify-content: space-between;
 }
